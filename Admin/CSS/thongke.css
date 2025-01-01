@@ -1,0 +1,16 @@
+.thongke {
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: center;
+}
+.thongke_header{
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.thongke_title {
+    font-size: 30px;
+    color: red;
+    margin-left: 20px;
+}
