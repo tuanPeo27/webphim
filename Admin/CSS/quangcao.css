@@ -1,0 +1,49 @@
+.quangcao {
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: center;
+}
+
+.quangcao_header{
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.quangcao_title {
+    font-size: 30px;
+    color: red;
+    margin-left: 20px;
+}
+.quangcao_content {
+    font-size: 18px;
+    color: black;
+    padding: 12px 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.quangcao_content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.quangcao_content table img {
+    width: 100px;
+    height: 60px;
+}
+.quangcao_content table th {
+    background-color: #f2f2f2;
+    font-weight: bolder;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.quangcao_content table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #e6e6e6;
+
+}
+
+.quangcao_content table tr {
+    border-bottom: 1px solid #e6e6e6;
+}

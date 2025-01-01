@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/admin.css">
+    <link rel="stylesheet" href="../CSS/user.css">
+    <link rel="stylesheet" href="../CSS/thongke.css">
+    <link rel="stylesheet" href="../CSS/phim.css">
+    <link rel="stylesheet" href="../CSS/quangcao.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div id="bars" onclick="phongto()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo i selected" onclick="hienphim()">
+                <div class="icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <div class="logo_name">Phim</div>
+            </div>
+            <div class="logo u" onclick="hienuser()">
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="logo_name">Người dùng</div>
+            </div>
+            <div class="logo q" onclick="hienquangcao()">
+                <div class="icon">
+                    <i class="fa-solid fa-rectangle-ad"></i>
+                </div>
+                <div class="logo_name">Quảng Cáo</div>
+            </div>
+            <div class="logo t" onclick="hienthongke()">
+                <div class="icon">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="logo_name">Thống kê</div>
+            </div>
+            <div class="logo">
+                <a href="/User/HTML/trangchu.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                    <div class="logo_name">Thoát</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <h4><strong>Nét Phít</strong></h4>
+        <div class="user">
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+    <div id="main-content">
+        <div class="phim">
+            <div class="phim_header">
+                <div class="phim_title">Danh sách phim</div>
+                <button class="btn-add">Thêm phim</button>
+            </div>
+            <div class="phim_content">
+                <table>
+                    <tr>
+                        <th>Mã Phim</th>
+                        <th>Tên phim</th>
+                        <th>Thể loại</th>
+                        <th>Đạo diễn</th>
+                        <th>Diễn viên</th>
+                        <th>Quốc Gia</th>
+                        <th>Lượt xem</th>
+                        <th>Đánh giá</th>
+                        <th>Thao tác</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Fast and Furious 9</td>
+                        <td>Hành động</td>
+                        <td>Justin Lin</td>
+                        <td>John Cena, Vin Diesel</td>
+                        <td>Mỹ</td>
+                        <td>100</td>
+                        <td>8.5</td>
+                        <td>
+                            <button class="btn-edit">Sửa</button>
+                            <button class="btn-delete">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Fast and Furious 9</td>
+                        <td>Hành động</td>
+                        <td>Justin Lin</td>
+                        <td>John Cena, Vin Diesel</td>
+                        <td>Mỹ</td>
+                        <td>100</td>
+                        <td>8.5</td>
+                        <td>
+                            <button class="btn-edit">Sửa</button>
+                            <button class="btn-delete">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Fast and Furious 9</td>
+                        <td>Hành động</td>
+                        <td>Justin Lin</td>
+                        <td>John Cena, Vin Diesel</td>
+                        <td>Mỹ</td>
+                        <td>100</td>
+                        <td>8.5</td>
+                        <td>
+                            <button class="btn-edit">Sửa</button>
+                            <button class="btn-delete">Xóa</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="nguoidung hidden">
+            <div class="nguoidung_header">
+                <div class="nguoidung_title">Danh sách người dùng</div>
+                <button class="btn-add">Thêm người dùng</button>
+            </div>
+            <div class="nguoidung_content">
+                <table>
+                    <tr>
+                        <th>Mã người dùng</th>
+                        <th>Tên người dùng</th>
+                        <th>Email</th>
+                        <th>Ngày sinh</th>
+                        <th>Giới tính</th>
+                        <th>Trạng thái</th>
+                        <th>Thao tác</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>nva@gmail.com</td>
+                        <td>01/01/2000</td>
+                        <td>Nam</td>
+                        <td>Premium</td>
+                        <td>
+                            <button class="btn-edit">Sửa</button>
+                            <button class="btn-delete">Khóa</button>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="quangcao hidden">
+            <div class="quangcao_header">
+                <div class="quangcao_title">Danh sách quảng cáo</div>
+                <button class="btn-add">Thêm quảng cáo</button>
+            </div>
+            <div class="quangcao_content">
+                <table>
+                    <tr>
+                        <th>Mã quảng cáo</th>
+                        <th>Ảnh</th>
+                        <th>Link</th>
+                        <th>Thao tác</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="/img/banner1.jpg" alt=""></td>
+                        <td>https://www.facebook.com</td>
+                        <td>
+                            <button class="btn-edit">Sửa</button>
+                            <button class="btn-delete">Xóa</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="thongke hidden">
+            <div class="thongke_header">
+                <div class="thongke_title">Thống kê</div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/admin.js"></script>
+</body>
+
+</html>

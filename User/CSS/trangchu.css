@@ -97,7 +97,22 @@
     border-radius: 10px;
 }
 .slide {
-    width: 80%;
+    width: 95%;
     background-color: black;
     margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.item {
+    width: 20%;
+    height: 300px;
+}
+.item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+li :click{
+    border-bottom: 1px solid red;
 }
